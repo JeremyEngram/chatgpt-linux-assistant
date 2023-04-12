@@ -12,12 +12,12 @@ debug = False
 Opens the system_prompt.txt file that contains the initial prompt sent to ChatGPT. 
 This is where the magic happens.
 """
-with open("system_prompt.txt", 'r') as sprompt:
+with open("system_prompt.txt", 'r') as prompt:
 	system_prompt= sprompt.read()
 
 
 #Connect to the openAI API using your API key
-chatbot = Chatbot(api_key="[API-KEY-HERE]", system_prompt=system_prompt)
+chatbot = Chatbot(api_key="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", system_prompt=system_prompt)
 
 
 #Main loop
